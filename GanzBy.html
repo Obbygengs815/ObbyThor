@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Peringatan</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .popup {
+      background-color: #1f1f1f;
+      color: white;
+      border-radius: 15px;
+      padding: 20px 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      max-width: 300px;
+      text-align: center;
+    }
+    .popup-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .popup-message {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .popup-button {
+      background: none;
+      border: none;
+      color: #aab5ff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <div class="popup-title">Halaman ini menyatakan</div>
+    <div class="popup-message">AKUN ANDA TELAH DIKUNCI!!</div>
+    <button class="popup-button" onclick="closePopup()">Harus kasih 100rb ke gw</button>
+  </div>
+
+  <script>
+    function closePopup() {
+      document.querySelector('.popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
